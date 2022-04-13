@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<div id="card">
+
+  <div id="one" class="rows"><img src="images/icon-star.svg"></div>
+  <div id="two" class="rows">How did we do ?</div>
+  <div id="three" class="rows"> Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</div>
+    
+  <div id="four" class="rows">
+    <form>
+    <input name="in" type="radio unchecked" class="btn" value=1>
+    <input name="in" type="radio unchecked" class="btn" value=2>
+    <input name="in" type="radio unchecked" class="btn" value=3>
+    <input name="in" type="radio unchecked" class="btn" value=4>
+    <input name="in" type="radio unchecked" class="btn" value=5>
+    </form>
+  </div>
+
+  <div id="five" class="rows"><button type="submit" class="submit" onclick="thankyou()">SUBMIT</button></div>
+
+</div>
+
+<div id="thankyoucard">
+
+  <div id="onee" class="rows2"><img class="illthankyou" src="images/illustration-thank-you.svg"></div>
+  <div id="twoo" class="rows2"></div>
+  <div id="threee" class="rows2">Thank You</div>
+  <div id="fourr" class="rows2">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</div>
+
+</div>
+
+
+<script>
+
+function thankyou() {
+
+var newnumber = document.getElementsByClassName("btn").value;
+
+
+
+document.getElementById("twoo").innerHTML = "You selected " +  newnumber + " out of 5 ";
+
+document.getElementById("card").style = "visibility:hidden";
+
+document.getElementById("thankyoucard").style = "visibility:visible" ;
+
+}
+
+</script>
+
+</body>
+</html>

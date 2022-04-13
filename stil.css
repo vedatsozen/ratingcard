@@ -1,0 +1,217 @@
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+#card {
+    margin: auto;
+    border-radius: 5px;
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid ;
+    visibility: visible;
+}
+
+#thankyoucard {
+    margin: auto;
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+    
+   
+}
+
+
+.rows {
+
+height: 20%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:hsl(216, 11%, 26%);
+padding:15px;
+
+}
+
+img {
+    background-color:hsl(218, 16%, 23%);
+    padding: 10px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+#one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+#two {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25px;
+    color:white;
+    
+}
+
+#three {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    
+}
+
+#four {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    
+}
+
+#five {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+button {
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color:hsl(218, 16%, 23%);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+input {
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color:hsl(218, 16%, 23%);
+    color: aliceblue;
+    cursor: pointer;
+    text-align: center;
+    
+
+}
+
+input:hover {
+    background-color: orange;
+}
+
+
+
+button.submit {
+
+background-color:hsl(25, 97%, 53%);
+color: white;
+height: fit-content;
+border-radius: 20px;
+width: 300px;
+padding:10px;
+font-size: 15px;
+
+}
+
+button.submit:hover {
+    background-color: white;
+    color:orange;
+}
+
+button:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+button:checked {
+    background-color: orange;
+}
+
+.illthankyou {
+    height: 90px;
+    width: 90px;
+}
+
+.rows2 {
+   
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(216, 11%, 26%);
+    padding:25px;
+
+    
+    }
+
+    
+    #thankyoucard #onee {
+        
+        color:white;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 10px 10px 0px 0px;
+        
+    }
+
+    #thankyoucard #twoo {
+        
+        background-color: lightcyan;
+        color:orange;
+        font-size:15px;
+        text-align: center;
+        
+        
+    }
+
+    #thankyoucard #threee {
+        
+        color:white;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #thankyoucard #fourr {
+        
+        color: lightgray;
+        font-size: 13px;
+        text-align: center;
+        border-radius: 0px 0px 10px 10px;
+    }
