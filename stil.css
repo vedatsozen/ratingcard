@@ -22,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid ;
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 #thankyoucard {
@@ -37,9 +37,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    visibility: hidden;
-    
-   
+    /* visibility: hidden; */
 }
 
 
@@ -118,25 +116,24 @@ button {
     cursor: pointer;
 }
 
-input {
+input[type="radio"] {
+    /*Delete radio buttons*/
+    display: none;
+}
 
-    height: 50px;
-    width: 50px;
+label{
+    padding: 10px 15px;
     border-radius: 50%;
     border: none;
     background-color:hsl(218, 16%, 23%);
     color: aliceblue;
     cursor: pointer;
     text-align: center;
-    
-
 }
 
-input:hover {
+label:hover {
     background-color: orange;
 }
-
-
 
 button.submit {
 
@@ -214,4 +211,12 @@ button:checked {
         font-size: 13px;
         text-align: center;
         border-radius: 0px 0px 10px 10px;
+    }
+
+    .hidden { /*Default class of thankyouCard*/
+        visibility: hidden;
+    }
+
+    .selectedBtn{ /*Changes the color button when user click it*/
+        background-color: rgb(102, 102, 102);
     }
