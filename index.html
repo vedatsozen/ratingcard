@@ -21,46 +21,38 @@
     
   <div id="four" class="rows">
     <form>
-    <input name="in" type="radio unchecked" class="btn" value=1>
-    <input name="in" type="radio unchecked" class="btn" value=2>
-    <input name="in" type="radio unchecked" class="btn" value=3>
-    <input name="in" type="radio unchecked" class="btn" value=4>
-    <input name="in" type="radio unchecked" class="btn" value=5>
+      <!-- Change inputs type to only radio and add a label -->
+      <label for="in">1</label>
+      <input name="in" type="radio" class="btn" value=1>
+      <label for="in">2</label>
+      <input name="in" type="radio" class="btn" value=2>
+      <label for="in">3</label>
+      <input name="in" type="radio" class="btn" value=3>
+      <label for="in">4</label>
+      <input name="in" type="radio" class="btn" value=4>
+      <label for="in">5</label>
+      <input name="in" type="radio" class="btn" value=5>
     </form>
   </div>
 
-  <div id="five" class="rows"><button type="submit" class="submit" onclick="thankyou()">SUBMIT</button></div>
+  <div id="five" class="rows">
+    <button type="submit" class="submit">SUBMIT</button>
+  </div>
 
 </div>
 
-<div id="thankyoucard">
+<div id="thankyoucard" class="hidden">
 
   <div id="onee" class="rows2"><img class="illthankyou" src="images/illustration-thank-you.svg"></div>
-  <div id="twoo" class="rows2"></div>
+  <div id="twoo" class="rows2">You selected <span class="score"> 0 </span> out of 5</div>
   <div id="threee" class="rows2">Thank You</div>
   <div id="fourr" class="rows2">We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch!</div>
+    don't hesitate to get in touch!</div>
 
 </div>
 
 
-<script>
-
-function thankyou() {
-
-var newnumber = document.getElementsByClassName("btn").value;
-
-
-
-document.getElementById("twoo").innerHTML = "You selected " +  newnumber + " out of 5 ";
-
-document.getElementById("card").style = "visibility:hidden";
-
-document.getElementById("thankyoucard").style = "visibility:visible" ;
-
-}
-
-</script>
+<script src="scripts.js"></script>
 
 </body>
 </html>
