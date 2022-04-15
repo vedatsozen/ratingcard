@@ -20,16 +20,18 @@
     to help us improve our offering!</div>
     
   <div id="four" class="rows">
-    <form>
-    <input name="in" type="radio unchecked" class="btn" value=1>
-    <input name="in" type="radio unchecked" class="btn" value=2>
-    <input name="in" type="radio unchecked" class="btn" value=3>
-    <input name="in" type="radio unchecked" class="btn" value=4>
-    <input name="in" type="radio unchecked" class="btn" value=5>
+
+    <form name="myform">
+    <input name="radios" type="radio" class="btn" value=1>
+    <input name="radios" type="radio" class="btn" value=2>
+    <input name="radios" type="radio" class="btn" value=3>
+    <input name="radios" type="radio" class="btn" value=4>
+    <input name="radios" type="radio" class="btn" value=5>
     </form>
+
   </div>
 
-  <div id="five" class="rows"><button type="submit" class="submit" onclick="thankyou()">SUBMIT</button></div>
+  <div id="five" class="rows"><button type="submit" class="submit" onclick="myfunction()">SUBMIT</button></div>
 
 </div>
 
@@ -46,21 +48,26 @@
 
 <script>
 
-function thankyou() {
-
-var newnumber = document.getElementsByClassName("btn").value;
-
-
-
-document.getElementById("twoo").innerHTML = "You selected " +  newnumber + " out of 5 ";
+function myfunction() {
 
 document.getElementById("card").style = "visibility:hidden";
+document.getElementById("thankyoucard").style = "visibility:visible";
 
-document.getElementById("thankyoucard").style = "visibility:visible" ;
+
+for (let i=0;i<document.forms[0].radios.length;i++) {
+
+if ( document.forms[0].radios[i].checked )
+
+{ var radiovalue = document.forms[0].radios[i].value; }
+
+}
+
+document.getElementById('twoo').innerHTML = " You selected " + radiovalue + " out of 5 " ;
 
 }
 
 </script>
+
 
 </body>
 </html>
